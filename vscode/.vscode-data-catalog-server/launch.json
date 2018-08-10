@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Server",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "nodemon",
+      "program": "${workspaceRoot}/bin/dev.js",
+      "sourceMaps": false,
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "NODE_ENV": "development",
+        "NODE_HEAPDUMP_OPTIONS": "nosignal",
+        "MONITORING": "false",
+        "VENDOR_ITERATOR_ENDPOINT": "http://vendor-metadata-iterator-http.devkubewd.dev.blackrock.com/",
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Server Tests",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outFiles": [
+          "${workspaceRoot}/dist/**/*"
+      ],
+    }
+  ]
+}
