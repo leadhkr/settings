@@ -14,23 +14,19 @@
       "sourceMaps": false,
       "restart": true,
       "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "env": {
-        "NODE_ENV": "development",
-        "NODE_HEAPDUMP_OPTIONS": "nosignal",
-        "MONITORING": "false",
-        "VENDOR_ITERATOR_ENDPOINT": "http://vendor-metadata-iterator-http.devkubewd.dev.blackrock.com/",
-      }
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Jest Server Tests",
-      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "name": "Jest Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "args": [
+          "-i"
+      ],
       "internalConsoleOptions": "openOnSessionStart",
       "outFiles": [
           "${workspaceRoot}/dist/**/*"
-      ],
+      ]
     }
   ]
 }

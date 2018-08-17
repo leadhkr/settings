@@ -12,10 +12,9 @@
             "runtimeArgs": [
                 "run", "dev"
             ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
+            "console": "internalConsole",
             "env": {
-                "ADS_APPLICATION_PORT": "3000",
+                "ADS_APPLICATION_PORT": "5000",
                 "defaultWebServer": "https://dev.blackrock.com",
                 "ADS_SIDECAR_SECURE": "false",
                 "NODE_ENV": "development",

@@ -1,0 +1,26 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Docker Auth Sidecar",
+      "type": "npm",
+      "script": "dev",
+      "options": {
+        "env": {
+          "ADS_APPLICATION_PORT": "5000",
+          "defaultWebServer": "https://dev.blackrock.com",
+          "ADS_SIDECAR_SECURE": "false",
+          "NODE_ENV": "development",
+          "ADS_TLS_REJECT_UNAUTHORIZED": "false",
+          "ADS_LDAP_SEARCH_BASE": "o=blackrock.com,dc=blackrock,dc=com",
+          "ADS_LDAP_BIND_CRED": "searchme",
+          "ADS_LDAP_URL": "ldap1.blackrock.com",
+          "ADS_WHITELISTED_ROUTE": "/tableau/*",
+          "ADS_LDAP_BIND_DN": "uid=searchuser,ou=people"
+        },
+      },
+    }
+  ]
+}
