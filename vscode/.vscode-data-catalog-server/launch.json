@@ -9,8 +9,14 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "runtimeExecutable": "nodemon",
-      "program": "${workspaceRoot}/bin/dev.js",
+      "runtimeExecutable": null,
+      "port": 9230,
+      "runtimeArgs": [
+        "--inspect-brk=9230",
+        "${workspaceRoot}/bin/dev.js",
+        "--runInBand",
+        "--watch"
+      ],
       "sourceMaps": false,
       "restart": true,
       "console": "integratedTerminal",
