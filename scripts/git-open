@@ -4,10 +4,15 @@
 # Retrieve Git Remote
 GIT_ENDPOINT=$(git config --get remote.origin.url)
 
-# Build HTTPS GitLab Endpoint
-REMOVED_COLON=${GIT_ENDPOINT/://}
-ADDED_PROTOCOL=${REMOVED_COLON/git@/https://}
-GIT_URL=${ADDED_PROTOCOL/.git/}
+if [ -z "$GIT_ENDPOINT" ]
+then
+      echo "Sorry, this directory is not a git repo (git init) or doesn't have a remote origin set (git remote -v)."
+else
+	# Build HTTPS GitLab Endpoint
+	REMOVED_COLON=${GIT_ENDPOINT/://}
+	ADDED_PROTOCOL=${REMOVED_COLON/git@/https://}
+	GIT_URL=${ADDED_PROTOCOL/.git/}
 
-# Launch URL in Default Browser
-python -mwebbrowser $GIT_URL
+	# Launch URL in Default Browser
+	python -mwebbrowser $GIT_URL
+fi
