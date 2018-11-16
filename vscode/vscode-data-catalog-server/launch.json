@@ -5,21 +5,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Server",
+      "name": "Data Catalog Server",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceRoot}",
-      "runtimeExecutable": null,
-      "port": 9230,
-      "runtimeArgs": [
-        "--inspect-brk=9230",
-        "${workspaceRoot}/bin/dev.js",
-        "--runInBand",
-        "--watch"
-      ],
-      "sourceMaps": false,
-      "restart": true,
       "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeArgs": [
+        "--nolazy",
+        "-r",
+        "ts-node/register"
+      ],
+      "args": [
+        "${workspaceFolder}/src/server.ts"
+      ],
+      "env": {
+        "TS_NODE_FILES": "true"
+      }
     },
     {
       "type": "node",

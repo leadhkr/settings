@@ -4,21 +4,25 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "ldap-auth",
+      "label": "Authentication",
       "type": "npm",
       "script": "dev",
       "options": {
         "env": {
           "ADS_APPLICATION_PORT": "5000",
           "defaultWebServer": "https://dev.blackrock.com",
+          "ADS_WHITELISTED_ROUTES": "/tableau/*,/api/fabric/queries",
+          "ADS_SESSION_STORE_SECRET": "euMRvZDiPF",
           "ADS_SIDECAR_SECURE": "false",
-          "NODE_ENV": "development",
           "ADS_TLS_REJECT_UNAUTHORIZED": "false",
-          "ADS_LDAP_SEARCH_BASE": "o=blackrock.com,dc=blackrock,dc=com",
+          "ADS_FILE_STORE_PATH": "/sessions",
+          "ADS_LDAP_BIND_DN": "uid=searchuser,ou=people",
           "ADS_LDAP_BIND_CRED": "searchme",
-          "ADS_LDAP_URL": "ldap1.blackrock.com",
-          "ADS_WHITELISTED_ROUTE": "/tableau/*",
-          "ADS_LDAP_BIND_DN": "uid=searchuser,ou=people"
+          "ADS_LDAP_SEARCH_FILTER": "(uid={{username}})",
+          "ADS_SESSION_NAME": "devdatacatalog",
+          "ADS_COOKIE_DOMAIN": ".devkubewd.dev.blackrock.com",
+          "ADS_DOMAIN": "devkubewd.dev.blackrock.com",
+          "ADS_ENCRYPT_SECRET": "DRN38yiCj4"
         },
       },
     }
