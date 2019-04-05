@@ -23,8 +23,8 @@
           "ADS_COOKIE_DOMAIN": ".devkubewd.dev.blackrock.com",
           "ADS_DOMAIN": "devkubewd.dev.blackrock.com",
           "ADS_ENCRYPT_SECRET": "DRN38yiCj4"
-        },
-      },
+        }
+      }
     }
   ]
 }

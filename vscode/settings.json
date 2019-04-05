@@ -1,0 +1,127 @@
+{
+  // GLOBAL
+  "terminal.integrated.shell.osx": "zsh",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  // "debug.toolBarLocation": "hidden",
+  "editor.snippetSuggestions": "top",
+  // SO FLOW TYPES DONT COMPLAIN FOR .TS FILE
+  "javascript.validate.enable": false,
+  // THEME SETTINGS
+  "workbench.colorCustomizations": {
+    "[Shades of Purple]": {
+      // "editor.background": "#222244"
+    }
+  },
+  // "importCost.smallPackageColor": "#6a7782",
+  // "importCost.mediumPackageColor": "#6a7782",
+  // "importCost.largePackageColor": "#6a7782",
+  "editor.lineHeight": 21,
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "editor.renderLineHighlight": "none",
+  "explorer.autoReveal": false,
+  // FONT SETTINGS
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "OperatorMonoLig-Book",
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "all",
+  "editor.fontSize": 17,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "window.zoomLevel": -1,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "terminal.integrated.fontFamily": "MesloLGSDZForPowerline-Regular",
+  "terminal.integrated.fontSize": 13,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Shades of Purple",
+  "terminal.integrated.rendererType": "dom",
+  // EXTENSION CONFIGS
+  "breadcrumbs.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  // GIT LENS
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "todo-tree.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.decorations.enabled": false,
+  "search.exclude": {
+    "**/.flowconfig": true,
+    "**/.git": true,
+    "**/bin": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/flow": true,
+    "**/flow-typed": true,
+    "**/public": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+  // PRETTIER
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  // TSLINT
+  "workbench.sideBar.location": "left",
+  "vsicons.projectDetection.autoReload": true,
+  "window.openFoldersInNewWindow": "on",
+  // POST CSS PLUGIN SUPPORT
+  "files.associations": {
+    // "*.css": "postcss",
+    // "*.scss": "postcss"
+  },
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ]
+}

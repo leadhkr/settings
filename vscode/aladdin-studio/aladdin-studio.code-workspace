@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "aladdin-studio-web-client"
+    },
+    {
+      "path": "/Users/sapatel/go/src/aladdin-studio-web-server"
+    }
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true,
+    "tslint.configFile": "/Users/sapatel/Projects/aladdin-studio/client/tsconfig.json"
+  }
+}
